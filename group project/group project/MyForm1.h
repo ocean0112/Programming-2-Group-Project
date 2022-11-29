@@ -45,7 +45,7 @@ namespace groupproject {
 
 
 
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::Windows::Forms::Label^ event1;
 
 
@@ -53,18 +53,31 @@ namespace groupproject {
 	private: System::Windows::Forms::Label^ event3;
 
 	private: System::Windows::Forms::Label^ event2;
-	private: System::Windows::Forms::PictureBox^ pictureBox3;
-	private: System::Windows::Forms::PictureBox^ pictureBox2;
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::GroupBox^ groupBox3;
-	private: System::Windows::Forms::GroupBox^ groupBox2;
-	private: System::Windows::Forms::GroupBox^ groupBox4;
-	private: System::Windows::Forms::GroupBox^ groupBox6;
-	private: System::Windows::Forms::GroupBox^ groupBox5;
-	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::GroupBox^ EventList;
+	private: System::Windows::Forms::GroupBox^ Box2;
+
+
+
+
+	private: System::Windows::Forms::GroupBox^ Box1;
+	private: System::Windows::Forms::GroupBox^ Box3;
+	private: System::Windows::Forms::GroupBox^ Box5;
+
+
+
+	private: System::Windows::Forms::GroupBox^ Box4;
+
+
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::PictureBox^ pictureBox4;
+
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::GroupBox^ Ad_space;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
+
 
 
 	private: System::ComponentModel::IContainer^ components;
@@ -84,37 +97,32 @@ namespace groupproject {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->event1 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->event2 = (gcnew System::Windows::Forms::Label());
 			this->event3 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox6 = (gcnew System::Windows::Forms::GroupBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->EventList = (gcnew System::Windows::Forms::GroupBox());
+			this->Box5 = (gcnew System::Windows::Forms::GroupBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->Box4 = (gcnew System::Windows::Forms::GroupBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->Box3 = (gcnew System::Windows::Forms::GroupBox());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->Box1 = (gcnew System::Windows::Forms::GroupBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->Box2 = (gcnew System::Windows::Forms::GroupBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->Ad_space = (gcnew System::Windows::Forms::GroupBox());
 			this->panel1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
-			this->groupBox1->SuspendLayout();
-			this->groupBox2->SuspendLayout();
-			this->groupBox3->SuspendLayout();
-			this->groupBox4->SuspendLayout();
-			this->groupBox5->SuspendLayout();
-			this->groupBox6->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
+			this->EventList->SuspendLayout();
+			this->Box5->SuspendLayout();
+			this->Box4->SuspendLayout();
+			this->Box3->SuspendLayout();
+			this->Box1->SuspendLayout();
+			this->Box2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
@@ -155,20 +163,6 @@ namespace groupproject {
 			this->event1->TabIndex = 2;
 			this->event1->Text = L"Cool Bar Presents:  Business Casual Brawls";
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(672, 16);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(142, 78);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox1->TabIndex = 3;
-			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm::pictureBox1_Click);
-			// 
 			// event2
 			// 
 			this->event2->AutoSize = true;
@@ -178,7 +172,6 @@ namespace groupproject {
 			this->event2->Size = System::Drawing::Size(387, 64);
 			this->event2->TabIndex = 6;
 			this->event2->Text = L"Fight club! \r\nHosted by \"Lady with Glasses\"\r\n";
-			this->event2->Click += gcnew System::EventHandler(this, &MyForm::event2_Click);
 			// 
 			// event3
 			// 
@@ -189,130 +182,39 @@ namespace groupproject {
 			this->event3->Size = System::Drawing::Size(463, 64);
 			this->event3->TabIndex = 7;
 			this->event3->Text = L"Rage in the Cage:\r\nThe Voices in my Head vs Some Pills\r\n";
-			this->event3->Click += gcnew System::EventHandler(this, &MyForm::event3_Click);
 			// 
-			// pictureBox2
+			// EventList
 			// 
-			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+			this->EventList->Controls->Add(this->Box5);
+			this->EventList->Controls->Add(this->Box4);
+			this->EventList->Controls->Add(this->Box3);
+			this->EventList->Controls->Add(this->Box1);
+			this->EventList->Controls->Add(this->Box2);
+			this->EventList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->EventList->Location = System::Drawing::Point(12, 112);
+			this->EventList->Name = L"EventList";
+			this->EventList->Size = System::Drawing::Size(703, 604);
+			this->EventList->TabIndex = 10;
+			this->EventList->TabStop = false;
+			this->EventList->Text = L"Upcoming Events!";
+			// 
+			// Box5
+			// 
+			this->Box5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(672, 16);
-			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(142, 78);
-			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox2->TabIndex = 8;
-			this->pictureBox2->TabStop = false;
-			// 
-			// pictureBox3
-			// 
-			this->pictureBox3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(672, 16);
-			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(142, 98);
-			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
-			this->pictureBox3->TabIndex = 9;
-			this->pictureBox3->TabStop = false;
-			this->pictureBox3->Click += gcnew System::EventHandler(this, &MyForm::pictureBox3_Click);
-			// 
-			// groupBox1
-			// 
-			this->groupBox1->Controls->Add(this->groupBox6);
-			this->groupBox1->Controls->Add(this->groupBox5);
-			this->groupBox1->Controls->Add(this->groupBox4);
-			this->groupBox1->Controls->Add(this->groupBox2);
-			this->groupBox1->Controls->Add(this->groupBox3);
-			this->groupBox1->Location = System::Drawing::Point(12, 112);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(832, 604);
-			this->groupBox1->TabIndex = 10;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"groupBox1";
-			// 
-			// groupBox2
-			// 
-			this->groupBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->groupBox2->Controls->Add(this->event1);
-			this->groupBox2->Controls->Add(this->pictureBox1);
-			this->groupBox2->Location = System::Drawing::Point(6, 19);
-			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(820, 100);
-			this->groupBox2->TabIndex = 11;
-			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"groupBox2";
-			this->groupBox2->Enter += gcnew System::EventHandler(this, &MyForm::groupBox2_Enter);
-			// 
-			// groupBox3
-			// 
-			this->groupBox3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->groupBox3->Controls->Add(this->event2);
-			this->groupBox3->Controls->Add(this->pictureBox2);
-			this->groupBox3->Location = System::Drawing::Point(6, 125);
-			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(820, 100);
-			this->groupBox3->TabIndex = 12;
-			this->groupBox3->TabStop = false;
-			this->groupBox3->Text = L"groupBox3";
-			// 
-			// groupBox4
-			// 
-			this->groupBox4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->groupBox4->Controls->Add(this->pictureBox3);
-			this->groupBox4->Controls->Add(this->event3);
-			this->groupBox4->Location = System::Drawing::Point(6, 231);
-			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Size = System::Drawing::Size(820, 120);
-			this->groupBox4->TabIndex = 11;
-			this->groupBox4->TabStop = false;
-			this->groupBox4->Text = L"groupBox4";
-			// 
-			// groupBox5
-			// 
-			this->groupBox5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->groupBox5->Controls->Add(this->pictureBox4);
-			this->groupBox5->Controls->Add(this->label2);
-			this->groupBox5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F));
-			this->groupBox5->Location = System::Drawing::Point(6, 357);
-			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Size = System::Drawing::Size(820, 100);
-			this->groupBox5->TabIndex = 13;
-			this->groupBox5->TabStop = false;
-			this->groupBox5->Text = L"groupBox5";
-			// 
-			// groupBox6
-			// 
-			this->groupBox6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->groupBox6->Controls->Add(this->pictureBox5);
-			this->groupBox6->Controls->Add(this->label3);
-			this->groupBox6->Location = System::Drawing::Point(6, 463);
-			this->groupBox6->Name = L"groupBox6";
-			this->groupBox6->Size = System::Drawing::Size(820, 100);
-			this->groupBox6->TabIndex = 14;
-			this->groupBox6->TabStop = false;
-			this->groupBox6->Text = L"groupBox6";
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Arial", 20.25F));
-			this->label2->Location = System::Drawing::Point(6, 16);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(490, 32);
-			this->label2->TabIndex = 0;
-			this->label2->Text = L"Austin \"Wildcats\" vs. Detroit \"Wildcats\"";
+			this->Box5->Controls->Add(this->label3);
+			this->Box5->Controls->Add(this->button5);
+			this->Box5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Box5->Location = System::Drawing::Point(6, 463);
+			this->Box5->Name = L"Box5";
+			this->Box5->Size = System::Drawing::Size(691, 100);
+			this->Box5->TabIndex = 14;
+			this->Box5->TabStop = false;
+			this->Box5->Text = L"Dec. 7";
+			this->Box5->MouseHover += gcnew System::EventHandler(this, &MyForm::box5_mouseHover);
 			// 
 			// label3
 			// 
@@ -324,25 +226,153 @@ namespace groupproject {
 			this->label3->TabIndex = 0;
 			this->label3->Text = L"Calculus 3 Homework vs My Desire to Game";
 			// 
-			// pictureBox4
+			// button5
 			// 
-			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(672, 16);
-			this->pictureBox4->Name = L"pictureBox4";
-			this->pictureBox4->Size = System::Drawing::Size(142, 78);
-			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox4->TabIndex = 1;
-			this->pictureBox4->TabStop = false;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button5->Location = System::Drawing::Point(601, 16);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 7;
+			this->button5->Text = L"Buy Now";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
-			// pictureBox5
+			// Box4
 			// 
-			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
-			this->pictureBox5->Location = System::Drawing::Point(672, 16);
-			this->pictureBox5->Name = L"pictureBox5";
-			this->pictureBox5->Size = System::Drawing::Size(142, 78);
-			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox5->TabIndex = 1;
-			this->pictureBox5->TabStop = false;
+			this->Box4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->Box4->Controls->Add(this->button4);
+			this->Box4->Controls->Add(this->label2);
+			this->Box4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Box4->Location = System::Drawing::Point(6, 357);
+			this->Box4->Name = L"Box4";
+			this->Box4->Size = System::Drawing::Size(691, 100);
+			this->Box4->TabIndex = 13;
+			this->Box4->TabStop = false;
+			this->Box4->Text = L"Dec. 4";
+			this->Box4->MouseHover += gcnew System::EventHandler(this, &MyForm::box4_mouseHover);
+			// 
+			// button4
+			// 
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button4->Location = System::Drawing::Point(601, 25);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(75, 23);
+			this->button4->TabIndex = 6;
+			this->button4->Text = L"Buy Now";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Arial", 20.25F));
+			this->label2->Location = System::Drawing::Point(6, 16);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(490, 32);
+			this->label2->TabIndex = 0;
+			this->label2->Text = L"Austin \"Wildcats\" vs. Detroit \"Wildcats\"";
+			// 
+			// Box3
+			// 
+			this->Box3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->Box3->Controls->Add(this->button3);
+			this->Box3->Controls->Add(this->event3);
+			this->Box3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Box3->Location = System::Drawing::Point(6, 231);
+			this->Box3->Name = L"Box3";
+			this->Box3->Size = System::Drawing::Size(691, 120);
+			this->Box3->TabIndex = 11;
+			this->Box3->TabStop = false;
+			this->Box3->Text = L"Dec. 2";
+			this->Box3->MouseHover += gcnew System::EventHandler(this, &MyForm::box3_mouseHover);
+			// 
+			// button3
+			// 
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->Location = System::Drawing::Point(601, 26);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(75, 23);
+			this->button3->TabIndex = 5;
+			this->button3->Text = L"Buy Now";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// Box1
+			// 
+			this->Box1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->Box1->Controls->Add(this->button1);
+			this->Box1->Controls->Add(this->event1);
+			this->Box1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Box1->Location = System::Drawing::Point(6, 19);
+			this->Box1->Name = L"Box1";
+			this->Box1->Size = System::Drawing::Size(691, 100);
+			this->Box1->TabIndex = 11;
+			this->Box1->TabStop = false;
+			this->Box1->Text = L"Nov. 30";
+			this->Box1->MouseHover += gcnew System::EventHandler(this, &MyForm::box1_mouseHover);
+			// 
+			// button1
+			// 
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(601, 25);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 3;
+			this->button1->Text = L"Buy Now";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
+			// Box2
+			// 
+			this->Box2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->Box2->Controls->Add(this->button2);
+			this->Box2->Controls->Add(this->event2);
+			this->Box2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Box2->Location = System::Drawing::Point(6, 125);
+			this->Box2->Name = L"Box2";
+			this->Box2->Size = System::Drawing::Size(691, 100);
+			this->Box2->TabIndex = 12;
+			this->Box2->TabStop = false;
+			this->Box2->Text = L"Dec. 2";
+			this->Box2->MouseHover += gcnew System::EventHandler(this, &MyForm::box2_mouseHover);
+			// 
+			// button2
+			// 
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->Location = System::Drawing::Point(601, 26);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 8;
+			this->button2->Text = L"Buy Now";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			// 
+			// Ad_space
+			// 
+			this->Ad_space->BackColor = System::Drawing::Color::Gray;
+			this->Ad_space->Location = System::Drawing::Point(721, 237);
+			this->Ad_space->Name = L"Ad_space";
+			this->Ad_space->Size = System::Drawing::Size(123, 305);
+			this->Ad_space->TabIndex = 11;
+			this->Ad_space->TabStop = false;
+			this->Ad_space->Text = L"Your Ad Here!";
 			// 
 			// MyForm
 			// 
@@ -350,43 +380,62 @@ namespace groupproject {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(856, 728);
+			this->Controls->Add(this->Ad_space);
 			this->Controls->Add(this->panel1);
-			this->Controls->Add(this->groupBox1);
+			this->Controls->Add(this->EventList);
 			this->MinimumSize = System::Drawing::Size(872, 520);
 			this->Name = L"MyForm";
 			this->Text = L"Sports";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox2->ResumeLayout(false);
-			this->groupBox2->PerformLayout();
-			this->groupBox3->ResumeLayout(false);
-			this->groupBox3->PerformLayout();
-			this->groupBox4->ResumeLayout(false);
-			this->groupBox4->PerformLayout();
-			this->groupBox5->ResumeLayout(false);
-			this->groupBox5->PerformLayout();
-			this->groupBox6->ResumeLayout(false);
-			this->groupBox6->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
+			this->EventList->ResumeLayout(false);
+			this->Box5->ResumeLayout(false);
+			this->Box5->PerformLayout();
+			this->Box4->ResumeLayout(false);
+			this->Box4->PerformLayout();
+			this->Box3->ResumeLayout(false);
+			this->Box3->PerformLayout();
+			this->Box1->ResumeLayout(false);
+			this->Box1->PerformLayout();
+			this->Box2->ResumeLayout(false);
+			this->Box2->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-
-
-private: System::Void event2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void groupBox2_Enter(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void event3_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Do you want to buy a ticket?\nFor the formal price of $99.99.", "Buy Ticket", MessageBoxButtons::YesNo);
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning: we ask that anyone with glasses to switch to contact lens.\nLady with Glasses will not reimburse you\"", "Buy Ticket", MessageBoxButtons::YesNo, MessageBoxIcon::Information);
+	}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\nEvery penny help me regain my sanity.", "Buy Ticket", MessageBoxButtons::YesNo, MessageBoxIcon::Asterisk);
+	}
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\nGo Wildcats!", "Buy Ticket", MessageBoxButtons::YesNo);
+	}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning this money will be used on Genshin Impact Lootboxes.\"", "Buy Ticket", MessageBoxButtons::YesNo,MessageBoxIcon::Warning);
+	}
+	private: void box1_mouseHover(Object^ sender, System::EventArgs^ e){
+		 this->Box1->BackColor = Color::FloralWhite;
+		}
+	
+	private: void box2_mouseHover(Object^ sender, System::EventArgs^ e) {
+		this->Box2->BackColor = Color::NavajoWhite;
+	}
+	private: void box3_mouseHover(Object^ sender, System::EventArgs^ e) {
+		this->Box3->BackColor = Color::PapayaWhip;
+	}
+	private: void box4_mouseHover(Object^ sender, System::EventArgs^ e) {
+		this->Box4->BackColor = Color::AntiqueWhite;
+	}
+	private: void box5_mouseHover(Object^ sender, System::EventArgs^ e) {
+		this->Box5->BackColor = Color::GhostWhite;
+	}
 };
 }
