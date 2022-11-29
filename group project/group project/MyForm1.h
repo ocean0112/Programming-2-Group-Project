@@ -421,10 +421,10 @@ namespace groupproject {
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning this money will be used on Genshin Impact Lootboxes.\"", "Buy Ticket", MessageBoxButtons::YesNo,MessageBoxIcon::Warning);
 	}
+	// just mouse hover events each box
 	private: void box1_mouseHover(Object^ sender, System::EventArgs^ e){
-		 this->Box1->BackColor = Color::FloralWhite;
-		}
-	
+		this->Box1->BackColor = Color::AntiqueWhite;
+	}
 	private: void box2_mouseHover(Object^ sender, System::EventArgs^ e) {
 		this->Box2->BackColor = Color::NavajoWhite;
 	}
@@ -432,10 +432,10 @@ namespace groupproject {
 		this->Box3->BackColor = Color::PapayaWhip;
 	}
 	private: void box4_mouseHover(Object^ sender, System::EventArgs^ e) {
-		this->Box4->BackColor = Color::AntiqueWhite;
+		this->Box4->BackColor = Color::FloralWhite;
 	}
 	private: void box5_mouseHover(Object^ sender, System::EventArgs^ e) {
-		this->Box5->BackColor = Color::GhostWhite;
+		this->Box5->BackColor = Color::WhiteSmoke;
 	}
 };
 }
