@@ -2,3 +2,4 @@ C:\Users\Peter Ocean\OneDrive\Documents\GitHub\Programming-Group-Project\group p
 C:\Users\Peter Ocean\OneDrive\Documents\GitHub\Programming-Group-Project\group project\group project\x64\Debug\group project.vcxproj.SuggestedBindingRedirects.cache
 C:\Users\Peter Ocean\OneDrive\Documents\GitHub\Programming-Group-Project\group project\group project\x64\Debug\groupproject.MyForm1.resources
 C:\Users\Peter Ocean\OneDrive\Documents\GitHub\Programming-Group-Project\group project\group project\x64\Debug\group project.vcxproj.GenerateResource.cache
+C:\Users\Peter Ocean\OneDrive\Documents\GitHub\Programming-Group-Project\group project\group project\x64\Debug\groupproject.secondForm.resources

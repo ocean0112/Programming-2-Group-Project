@@ -1,4 +1,5 @@
 #pragma once
+#include "secondForm.h"
 
 namespace groupproject {
 
@@ -37,39 +38,16 @@ namespace groupproject {
 	private: System::Windows::Forms::Panel^ panel1;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ event1;
-
-
-
 	private: System::Windows::Forms::Label^ event3;
-
 	private: System::Windows::Forms::Label^ event2;
 	private: System::Windows::Forms::GroupBox^ EventList;
 	private: System::Windows::Forms::GroupBox^ Box2;
-
-
-
-
 	private: System::Windows::Forms::GroupBox^ Box1;
 	private: System::Windows::Forms::GroupBox^ Box3;
 	private: System::Windows::Forms::GroupBox^ Box5;
-
-
-
 	private: System::Windows::Forms::GroupBox^ Box4;
-
-
 	private: System::Windows::Forms::Label^ label3;
-
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::GroupBox^ Ad_space;
 	private: System::Windows::Forms::Button^ button3;
@@ -77,19 +55,15 @@ namespace groupproject {
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
-
-
-
+	private: System::Windows::Forms::ToolStripMenuItem^ hOMEToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ sPORTSToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ cONCERTSToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ oTHEREVENTSToolStripMenuItem;
 	private: System::ComponentModel::IContainer^ components;
-
-
-
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-
-
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// Required method for Designer support - do not modify
@@ -116,6 +90,10 @@ namespace groupproject {
 			this->Box2 = (gcnew System::Windows::Forms::GroupBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->Ad_space = (gcnew System::Windows::Forms::GroupBox());
+			this->hOMEToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sPORTSToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->cONCERTSToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->oTHEREVENTSToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1->SuspendLayout();
 			this->EventList->SuspendLayout();
 			this->Box5->SuspendLayout();
@@ -146,7 +124,7 @@ namespace groupproject {
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(100, 22);
+			this->label1->Location = System::Drawing::Point(85, 37);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(660, 55);
 			this->label1->TabIndex = 0;
@@ -185,6 +163,7 @@ namespace groupproject {
 			// 
 			// EventList
 			// 
+			this->EventList->BackColor = System::Drawing::Color::White;
 			this->EventList->Controls->Add(this->Box5);
 			this->EventList->Controls->Add(this->Box4);
 			this->EventList->Controls->Add(this->Box3);
@@ -373,7 +352,6 @@ namespace groupproject {
 			this->Ad_space->TabIndex = 11;
 			this->Ad_space->TabStop = false;
 			this->Ad_space->Text = L"Your Ad Here!";
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -385,7 +363,7 @@ namespace groupproject {
 			this->Controls->Add(this->EventList);
 			this->MinimumSize = System::Drawing::Size(872, 520);
 			this->Name = L"MyForm";
-			this->Text = L"Sports";
+			this->Text = L"Totally Legit Ticket Purchasing Site";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
@@ -406,36 +384,56 @@ namespace groupproject {
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
+	//
+	//button events
+	//
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Do you want to buy a ticket?\nFor the formal price of $99.99.", "Buy Ticket", MessageBoxButtons::YesNo);
+		if (MessageBox::Show("Do you want to buy a ticket?\nFor the formal, yet also casual price of $99.99!", "Buy Ticket", MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes) {
+			secondForm^ form = gcnew secondForm;
+			form->ShowDialog();
+		}
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning: we ask that anyone with glasses to switch to contact lens.\nLady with Glasses will not reimburse you\"", "Buy Ticket", MessageBoxButtons::YesNo, MessageBoxIcon::Information);
+		if (MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning: we ask that anyone with glasses to switch to contact lens.\nLady with Glasses will not reimburse you\"", "Buy Ticket", MessageBoxButtons::YesNo, MessageBoxIcon::Information) == System::Windows::Forms::DialogResult::Yes) {
+			secondForm^ form = gcnew secondForm;
+			form->ShowDialog();
+		}
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\nEvery penny help me regain my sanity.", "Buy Ticket", MessageBoxButtons::YesNo, MessageBoxIcon::Asterisk);
+		if(MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\nEvery penny help me regain my sanity.", "Buy Ticket", MessageBoxButtons::YesNo, MessageBoxIcon::Asterisk) == System::Windows::Forms::DialogResult::Yes) {
+			secondForm^ form = gcnew secondForm;
+			form->ShowDialog();
+		}
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\nGo Wildcats!", "Buy Ticket", MessageBoxButtons::YesNo);
+		if (MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\nGo Wildcats!", "Buy Ticket", MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes) {
+			secondForm^ form = gcnew secondForm;
+			form->ShowDialog();
+		}
 	}
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning this money will be used on Genshin Impact Lootboxes.\"", "Buy Ticket", MessageBoxButtons::YesNo,MessageBoxIcon::Warning);
+		if (MessageBox::Show("Do you want to buy a ticket?\nFor the small price of $99.99!\n\n\"Warning this money will be used on Genshin Impact Lootboxes.\"", "Buy Ticket", MessageBoxButtons::YesNo,MessageBoxIcon::Warning) == System::Windows::Forms::DialogResult::Yes) {
+			secondForm^ form = gcnew secondForm;
+			form->ShowDialog();
+		}
 	}
+	//
 	// just mouse hover events each box
+	//
 	private: void box1_mouseHover(Object^ sender, System::EventArgs^ e){
-		this->Box1->BackColor = Color::AntiqueWhite;
+		this->Box1->BackColor = Color::NavajoWhite;
 	}
 	private: void box2_mouseHover(Object^ sender, System::EventArgs^ e) {
 		this->Box2->BackColor = Color::NavajoWhite;
 	}
 	private: void box3_mouseHover(Object^ sender, System::EventArgs^ e) {
-		this->Box3->BackColor = Color::PapayaWhip;
+		this->Box3->BackColor = Color::NavajoWhite;
 	}
 	private: void box4_mouseHover(Object^ sender, System::EventArgs^ e) {
-		this->Box4->BackColor = Color::FloralWhite;
+		this->Box4->BackColor = Color::NavajoWhite;
 	}
 	private: void box5_mouseHover(Object^ sender, System::EventArgs^ e) {
-		this->Box5->BackColor = Color::WhiteSmoke;
+		this->Box5->BackColor = Color::NavajoWhite;
 	}
 };
 }
