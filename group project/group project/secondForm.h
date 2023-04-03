@@ -101,8 +101,8 @@ namespace groupproject {
 			// 
 			this->textBox1->Location = System::Drawing::Point(8, 136);
 			this->textBox1->MaxLength = 16;
-			this->textBox1->Name = L"textBox1";
 			this->textBox1->PasswordChar = '#';
+			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(409, 24);
 			this->textBox1->TabIndex = 1;
 			// 
@@ -139,8 +139,10 @@ namespace groupproject {
 			this->textBox2->MaxLength = 3;
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->PasswordChar = '#';
+
 			this->textBox2->Size = System::Drawing::Size(99, 24);
-			this->textBox2->TabIndex = 5;
+			this->textBox2->TabIndex			this->textBox2->PasswordChar = '#';
+ = 5;
 			// 
 			// label1
 			// 
